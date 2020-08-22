@@ -1,0 +1,41 @@
+
+ PROGR2.COB                              Mon Jul 20 19:52:41 2020    Page   1
+ line number source line   Microsoft COBOL                       Version 2.20
+
+   1         IDENTIFICATION DIVISION.
+   2         PROGRAM-ID. PROGR2.
+   3        *AUTHOR. ANGELO LOTIERZO FILHO.
+   4        **************************************
+   5        * MANUTENCAO DO XXXXXXXX  *
+   6        **************************************
+   7        *----------------------------------------------------------------
+   8         ENVIRONMENT DIVISION.
+   9         CONFIGURATION SECTION.
+  10         SPECIAL-NAMES.
+  11                           DECIMAL-POINT IS COMMA.
+  12    
+  13        *
+  14        *-----------------------------------------------------------------
+  15         DATA DIVISION.
+  16    
+  17        *
+  18        *-----------------------------------------------------------------
+  19         WORKING-STORAGE SECTION.
+  20         01 NOME          PIC X(30) VALUE SPACES.
+  21         01 IDADE          PIC 9(02) VALUE ZEROS.
+  22    
+  23        *-----------------------------------------------------------------
+  24         PROCEDURE DIVISION.
+  25         INICIO.
+  26        *
+  27             DISPLAY (10, 20) "NOME : ".
+  28             ACCEPT (10, 27) NOME.
+  29             DISPLAY (12, 20) "IDADE : ".
+  30             ACCEPT (12, 28) IDADE.
+  31             STOP RUN.
+
+   No errors or warnings
+
+   Data area size =   288
+   Code area size =    60
+
