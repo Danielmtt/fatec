@@ -9,7 +9,7 @@ public class exercício2 {
 
 	int[] vetor = new int[5];
 	int[] vetorF = new int[5];
-	String msgVetor="",msgVetorF="";
+	String msgVetor="", msgVetorF="";
 	
 	Random rand = new Random();
 	
@@ -25,7 +25,6 @@ public class exercício2 {
 	System.out.println("Vetor com os valores: " + msgVetor);
 	
 	System.out.println("Vetor calculando o fatorial dos valores do primeiro vetor: "+ msgVetorF);
-
 
     }
     
