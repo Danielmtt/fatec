@@ -42,10 +42,5 @@ public class exercicio1 {
 	System.out.printf("\nMédia dos númetos negativos: %.2f", mediaNegativos);
 	System.out.printf("\nMédia geral: media geral: %.2f", mediaGeral);
 
-	
-	
-	
-	
-	
     }
 }

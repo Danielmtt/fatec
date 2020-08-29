@@ -23,7 +23,6 @@ public class exercício2 {
 	}
 	
 	System.out.println("Vetor com os valores: " + msgVetor);
-	
 	System.out.println("Vetor calculando o fatorial dos valores do primeiro vetor: "+ msgVetorF);
 
     }
