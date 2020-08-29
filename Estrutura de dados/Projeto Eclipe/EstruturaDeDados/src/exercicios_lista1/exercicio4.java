@@ -3,7 +3,6 @@ package exercicios_lista1;
 import java.util.Random;
 
 /*
-
 Carregar uma matriz [4 x 4 inteiro]. Apresentar:
 	 Soma dos valores no intervalo de 1 a 100
 	 Quantidade de números divisíveis por 8
