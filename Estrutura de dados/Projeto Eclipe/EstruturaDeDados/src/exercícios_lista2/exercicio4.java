@@ -1,5 +1,7 @@
 package exercícios_lista2;
 
+//Implemente uma Lista de Strings em alocação estática com todas as operações indicadas a seguir:
+
 public class exercicio4 {
     public class exercicio3 {
 	    String[] elementos;
