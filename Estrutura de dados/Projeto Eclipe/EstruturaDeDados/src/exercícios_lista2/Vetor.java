@@ -1,7 +1,5 @@
 package exercícios_lista2;
 
-import java.util.Arrays;
-
 public class Vetor {
     private String[] elementos;	
     private int tamanho;
