@@ -4,6 +4,11 @@ public class Lista {
     private No inicio;
     private int tamanho;
 
+    
+    public boolean vazia() {
+	return inicio == null ? true : false;
+    }
+
     public void inserirInicio(String elemento) {
 	No no = new No();
 	no.info = elemento;
@@ -11,6 +16,7 @@ public class Lista {
 	inicio = no;
 	tamanho++;
     }
+    
     
     public String retirarInicio() {
 	if (inicio == null)
