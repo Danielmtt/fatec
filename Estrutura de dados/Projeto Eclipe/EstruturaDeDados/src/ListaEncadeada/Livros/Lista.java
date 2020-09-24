@@ -109,10 +109,9 @@ public class Lista {
 	}
     }
     
-    
 //Remover elemento em determina posição da lista
 //=================================================================
-public void removeIndice(int index) {
+    public void removeIndice(int index) {
 	if(vazia()) {
 	    System.out.println("Lista Vazia") ;
 	} else {

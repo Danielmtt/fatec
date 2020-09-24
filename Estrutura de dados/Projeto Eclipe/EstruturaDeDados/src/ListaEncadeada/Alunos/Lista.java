@@ -6,15 +6,11 @@ public class Lista {
     private Node inicio;
     private int tamanho;
     
-    
-    
-    
 //Verifica se a lista está vazia
 //=================================================================
     public boolean vazia() {
 	return inicio == null ? true : false;
     }   
-    
     
 //Adiciona no inicio    
 //=================================================================
@@ -75,7 +71,6 @@ public class Lista {
 	    tamanho++;
 	}
     }
-
     
 // 	Remove Inicio 
 //=================================================================
