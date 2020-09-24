@@ -130,24 +130,22 @@ public class Lista {
     }
     // Função recursiva vai recebendo sempre o proximo nó e verificando há um proximo só. Caso o proximo nó seja null a recursiva para.    
     //=================================================================
-    public void imprime(Node node) {
+    private void imprime(Node node) {
 	if(node.proximo != null) {
 	    System.out.println(
-		    node.aluno.getRa()     		+ "\n" +
-		    node.aluno.getNome() 		+ "\n" +
-		    node.aluno.getTurma() 		+ "\n" +
-		    node.aluno.getSemestre() 	+ "\n"
+		    node.aluno.getRa()     		+ " : " +
+		    node.aluno.getNome() 		+ "   TURMA:" +
+		    node.aluno.getTurma() 		+ "   SEMESTRE" 
 		    );
 	    
-	    System.out.println("vv\n");
+	    System.out.println("\nPROXIMO        vv\n");
 	    
 	    imprime(node.proximo);
 	} else {
 	    System.out.println(
-		    node.aluno.getRa()     		+ "\n" +
-		    node.aluno.getNome() 		+ "\n" +
-		    node.aluno.getTurma() 		+ "\n" +
-		    node.aluno.getSemestre() 	+ "\n\n"
+		    node.aluno.getRa()     		+ " : " +
+		    node.aluno.getNome() 		+ "  TURMA: " +
+		    node.aluno.getTurma() 		+ "  SEMESTRE: " 
 		    );
 	}
     }
