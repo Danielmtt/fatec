@@ -1,17 +1,12 @@
 package ListaEncadeada.Alunos;
 
-
-/*
- 
- Implemente um método que apresente cada um dos elementos da lista 
- */
-
 @SuppressWarnings("all")
 public class Lista {
     
     private Node inicio;
     private int tamanho;
     
+//Adiciona no inicio    
 //=================================================================
     public void addInicio(Aluno aluno) {
 	Node node = new Node();
@@ -22,6 +17,8 @@ public class Lista {
 	
 	tamanho++;
     }
+    
+//Adiciona no final    
 //=================================================================
     public void addFim(Aluno aluno) {
 	if(this.inicio == null) {
@@ -41,8 +38,8 @@ public class Lista {
 	}
     }
     
+//Insere no meio
 //=================================================================
-    
     public void inserirMeio(Aluno aluno) {
 	if(this.inicio == null) {
 	    addInicio(aluno);
@@ -53,9 +50,9 @@ public class Lista {
 	}
     }
 
-// Nessa função recursiva o tamanho é descrescido em 2  a cada chamada. 
-// fazendo com que o tamanho chegue a zero no dobro da velocidade, resultando ao meio da lista 
-// quando o tamanho chega ao 2(um elemento antes do meio). 
+    // Nessa função recursiva o tamanho é descrescido em 2  a cada chamada. 
+    // fazendo com que o tamanho chegue a zero no dobro da velocidade, resultando ao meio da lista 
+    // quando o tamanho chega ao 2(um elemento antes do meio). 
     private void  inserirMeio(Aluno aluno, int tamanho, Node node) {
 	if(tamanho != 2) {
 	    inserirMeio(aluno, tamanho -2, node.proximo);
@@ -70,8 +67,8 @@ public class Lista {
     }
 
     
-//=================================================================
 // 	Remove Inicio 
+//=================================================================
     public void removerInicio() {
 	if (this.inicio == null) {
 	    System.out.println("lista vazia. Impossível remover");
@@ -80,7 +77,7 @@ public class Lista {
 	tamanho--;
     }
     
-
+// Remover no meio, segue a mesma lógica do metodo inserir no meio.
 //=================================================================
     public void removerMeio() {
 	if(inicio == null) {
@@ -110,7 +107,6 @@ public class Lista {
 	}
 	removeFinal(this.inicio, this.inicio.proximo);
     }
-    
     // recursividade direta
     private void removeFinal(Node node, Node aux) {
 	if(aux.proximo != null) {
@@ -123,13 +119,11 @@ public class Lista {
 
 //imprime valores
 //=================================================================
-    
     public void imprime() {
 	imprime(this.inicio);
     }
-    
-// Função recursiva vai recebendo sempre o proximo nó e verificando há um proximo só. Caso o proximo nó seja null a recursiva para.    
-//=================================================================
+    // Função recursiva vai recebendo sempre o proximo nó e verificando há um proximo só. Caso o proximo nó seja null a recursiva para.    
+    //=================================================================
     public void imprime(Node node) {
 	if(node.proximo != null) {
 	    System.out.println(
@@ -151,7 +145,4 @@ public class Lista {
 		    );
 	}
     }
-    
-    
-    
 }
