@@ -128,10 +128,6 @@ public class Lista {
 	}
     }
         
-        
-	
-	
-    
     public String toString() {
 	String str = "(" + tamanho + ")  ";
 	

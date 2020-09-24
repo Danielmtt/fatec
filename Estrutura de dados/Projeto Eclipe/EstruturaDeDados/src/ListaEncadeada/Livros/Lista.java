@@ -144,7 +144,6 @@ public void removeIndice(int index) {
 	}
     }
     
-    
     public Livro getUltimo(Node node) {
 	if(node.proximo == null) {
 	    return node.livro;
