@@ -20,6 +20,7 @@ public class Lista {
 	node.aluno = aluno;
 	node.proximo = inicio;
 	inicio = node;
+	System.out.println(node.aluno.getNome() + " inserido no inicio da lista");
 	
 	tamanho++;
     }
