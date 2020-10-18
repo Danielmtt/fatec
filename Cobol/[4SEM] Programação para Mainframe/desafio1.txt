@@ -1,0 +1,3 @@
+adicionar campos: media, falta1, falta2, total faltas
+
+renomear disk file ("cadnotas1.dat")
